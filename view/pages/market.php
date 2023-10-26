@@ -14,11 +14,32 @@
         <?php include('../layouts/navbar.php'); ?>
     </div>
     <div class="container">
-         <div class="artwork-container">
-            <img src="/aStuff/public/img/pc.gif" alt="highlight">
-            <div class="artist-info">
-                <p><img src="/aStuff/public/img/artist.jpg" alt="Artist" class='artist'>@unknown213</p>
-                <p class="release"><strong>Release Date</strong><br> January 1, 2023</p>
+        <div class="artwork-market">
+            <img src="https://media0.giphy.com/media/gw3Pz3YQZREedZbG/giphy.gif?cid=ecf05e47gsybd0tadyj0jhuk1oz3t0b42irw39beb4qvbxb2&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="highlight">
+            <div class="artist-market">
+                <p><img src="/aStuff/public/img/artist.jpg" alt="Artist" class='artist-market'>@unknown213</p>
+                <p class="release-market"><strong>Release Date</strong><br> January 1, 2023</p>
+            </div>
+        </div>
+        <div class="artwork-market">
+            <img src="https://media1.giphy.com/media/xTiTnyVHRS87mtGPQs/giphy.gif?cid=ecf05e474gmorymxgazlysv7o09wqwrzxj1kne99djy2ncon&ep=v1_gifs_related&rid=giphy.gif&ct=g" alt="highlight">
+            <div class="artist-market">
+                <p><img src="/aStuff/public/img/artist.jpg" alt="Artist" class='artist-market'>@unknown213</p>
+                <p class="release-market"><strong>Release Date</strong><br> January 1, 2023</p>
+            </div>
+        </div>
+        <div class="artwork-market">
+            <img src="https://media.giphy.com/media/3oEdv4PbPTR65zVSqk/giphy.gif" alt="highlight">
+            <div class="artist-market">
+                <p><img src="/aStuff/public/img/artist.jpg" alt="Artist" class='artist-market'>@unknown213</p>
+                <p class="release-market"><strong>Release Date</strong><br> January 1, 2023</p>
+            </div>
+        </div>
+        <div class="artwork-market">
+            <img src="https://media1.giphy.com/avatars/abjahanbin/wQTvsZoRIsU1.gif" alt="highlight">
+            <div class="artist-market">
+                <p><img src="/aStuff/public/img/artist.jpg" alt="Artist" class='artist-market'>@unknown213</p>
+                <p class="release-market"><strong>Release Date</strong><br> January 1, 2023</p>
             </div>
         </div>
     </div>

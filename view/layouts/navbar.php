@@ -1,5 +1,5 @@
 <nav>
-    <img src="./public/img/aStuff.png" alt="kopi" class="logo">
+    <img src="/aStuff/public/img/aStuff.png" alt="kopi" class="logo">
     <ul>
         <li><a href="/aStuff/index.php">Features</a></li>
         
