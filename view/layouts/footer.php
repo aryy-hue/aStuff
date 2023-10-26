@@ -7,9 +7,9 @@
         </div>
         <div class="info-work">
             <p><strong>How does Astuff work</strong><br>
-            In Astuff you can use many cryptocurancy as a paiment. <br>
+            In Astuff you can use many cryptocurancy as a payment. <br>
             You can press learn more if you want more information about this site
             </p>
         </div>
-        <button class="btn btn-outline-light">Learn More</button>
+        <button class="btn btn-outline-light btn-sm">Learn More</button>
     </div>
