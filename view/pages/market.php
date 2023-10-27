@@ -14,33 +14,69 @@
         <?php include('../layouts/navbar.php'); ?>
     </div>
     <div class="container">
-        <div class="artwork-market">
-            <img src="https://media0.giphy.com/media/gw3Pz3YQZREedZbG/giphy.gif?cid=ecf05e47gsybd0tadyj0jhuk1oz3t0b42irw39beb4qvbxb2&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="highlight">
-            <div class="artist-market">
-                <p><img src="/aStuff/public/img/artist.jpg" alt="Artist" class='artist-market'>@unknown213</p>
-                <p class="release-market"><strong>Release Date</strong><br> January 1, 2023</p>
+        <div class="container-market">
+            <div class="marketplace">
+                <div class="market-img">
+                    <img src="https://media0.giphy.com/media/gw3Pz3YQZREedZbG/giphy.gif?cid=ecf05e47gsybd0tadyj0jhuk1oz3t0b42irw39beb4qvbxb2&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="highlight">
+                </div>
+                <div class="market-info">
+                    <p>
+                        <img src="/aStuff/public/img/artist.jpg" alt="Artist" class="artist">@asep</p>
+                    <p class="price"><strong>Price</strong><br> $1+</p>
+                </div>
             </div>
-        </div>
-        <div class="artwork-market">
-            <img src="https://media1.giphy.com/media/xTiTnyVHRS87mtGPQs/giphy.gif?cid=ecf05e474gmorymxgazlysv7o09wqwrzxj1kne99djy2ncon&ep=v1_gifs_related&rid=giphy.gif&ct=g" alt="highlight">
-            <div class="artist-market">
-                <p><img src="/aStuff/public/img/artist.jpg" alt="Artist" class='artist-market'>@unknown213</p>
-                <p class="release-market"><strong>Release Date</strong><br> January 1, 2023</p>
+            
+            <div class="marketplace">
+                <div class="market-img">
+                    <img src="https://i.pinimg.com/originals/07/85/a4/0785a4d12b21d25e962fc0cc1a6f145a.gif" alt="highlight">
+                </div>
+                <div class="market-info">
+                    <p>
+                        <img src="/aStuff/public/img/artist.jpg" alt="Artist" class="artist">@asep</p>
+                    <p class="price"><strong>Price</strong><br> $1+</p>
+                </div>
             </div>
-        </div>
-        <div class="artwork-market">
-            <img src="https://media.giphy.com/media/3oEdv4PbPTR65zVSqk/giphy.gif" alt="highlight">
-            <div class="artist-market">
-                <p><img src="/aStuff/public/img/artist.jpg" alt="Artist" class='artist-market'>@unknown213</p>
-                <p class="release-market"><strong>Release Date</strong><br> January 1, 2023</p>
+            <div class="marketplace">
+                <div class="market-img">
+                    <img src="https://i.pinimg.com/originals/07/85/a4/0785a4d12b21d25e962fc0cc1a6f145a.gif" alt="highlight">
+                </div>
+                <div class="market-info">
+                    <p>
+                        <img src="/aStuff/public/img/artist.jpg" alt="Artist" class="artist">@asep</p>
+                    <p class="price"><strong>Price</strong><br> $1+</p>
+                </div>
             </div>
-        </div>
-        <div class="artwork-market">
-            <img src="https://media1.giphy.com/avatars/abjahanbin/wQTvsZoRIsU1.gif" alt="highlight">
-            <div class="artist-market">
-                <p><img src="/aStuff/public/img/artist.jpg" alt="Artist" class='artist-market'>@unknown213</p>
-                <p class="release-market"><strong>Release Date</strong><br> January 1, 2023</p>
+            <div class="marketplace">
+                <div class="market-img">
+                    <img src="https://news.artnet.com/app/news-upload/2021/02/NYAN-CAT-ARTINTERVIEW-copy.jpg" alt="highlight">
+                </div>
+                <div class="market-info">
+                    <p>
+                        <img src="/aStuff/public/img/artist.jpg" alt="Artist" class="artist">@asep</p>
+                    <p class="price"><strong>Price</strong><br> $1+</p>
+                </div>
             </div>
+            <div class="marketplace">
+                <div class="market-img">
+                    <img src="https://images.squarespace-cdn.com/content/v1/604a3b7f8195a274403f26be/1676475834891-4OLGC99391KD99TPY456/imposter+%285%29.gif?format=500w" alt="highlight">
+                </div>
+                <div class="market-info">
+                    <p>
+                        <img src="/aStuff/public/img/artist.jpg" alt="Artist" class="artist">@asep</p>
+                    <p class="price"><strong>Price</strong><br> $1+</p>
+                </div>
+            </div>
+            <div class="marketplace">
+                <div class="market-img">
+                    <img src="https://images.squarespace-cdn.com/content/v1/604a3b7f8195a274403f26be/1676475834891-4OLGC99391KD99TPY456/imposter+%285%29.gif?format=500w" alt="highlight">
+                </div>
+                <div class="market-info">
+                    <p>
+                        <img src="/aStuff/public/img/artist.jpg" alt="Artist" class="artist">@asep</p>
+                    <p class="price"><strong>Price</strong><br> $1+</p>
+                </div>
+            </div>
+            
         </div>
     </div>
     <?php include('../layouts/footer.php'); ?>

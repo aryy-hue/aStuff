@@ -76,15 +76,15 @@ span {
 .footer .btn {
     padding: 10px 20px; /* Atur padding atas dan bawah 10px, padding kanan dan kiri 20px */
 }
-.container {
-    width: 100%;
+.container-menu {
+
     min-height: 100vh;
     display: flex;
     align-items: center;
     margin:0px 200px;
 }
 
-/* .container p{
+/* .container-menu p{
     margin: 20px 20px;
     position: absolute;
     justify-content: right;
@@ -94,7 +94,7 @@ span {
 } */
 
 /* FEATURES */
-.container h2 {
+.container-menu h2 {
     flex: 2; /* Biarkan elemen h2 mengisi sisa ruang yang tersedia */
     padding: 0px;
 }
@@ -130,31 +130,44 @@ span {
     border-radius: 100%;
 }
 
+
 /* MARKET */
-.container {
+.container-market {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 20px; /* Jarak luar container */
+    margin: 0px 50px; /* Jarak luar container */
+    align-items: center;
 }
 
-.artwork-market {
-    width: 30%; /* Setiap item mengambil 30% dari lebar container */
-    margin-bottom: 20px; /* Jarak antar item */
-    background-color: #f5f5f5; /* Warna latar belakang item */
-    padding: 20px; /* Ruang dalam item */
-    box-sizing: border-box; /* Memasukkan padding dan border ke dalam lebar dan tinggi */
+.market-info {
+    margin-top: 20px;
+    display: flex; /* Menggunakan flexbox untuk menata elemen-elemen bersebelahan */
+    align-items: center;
 }
 
-.artwork-market img {
-    width: 100%; /* Gambar mengisi 100% lebar item */
+.market-info .price {
+    padding-top: 0px;
+    padding-left:200px;
+    padding-right:5px;
+    margin-left: auto; /* Memindahkan elemen .release ke kanan */
+    text-align: right;
 }
-
-.artist-market {
-    text-align: center;
-    margin-top: 10px; /* Jarak antara gambar dan teks */
+.price{
+    color: green;
 }
-
-.release-market {
-    margin-top: 10px; /* Jarak antara teks dan tanggal rilis */
+.marketplace{
+    padding: 10px 10px;
+    font-size:medium;
+    text-align: left;
+    margin:10px 0px;
+    margin-left: 10px;
+    border-style: solid;
+    border-color: #C4C4C4;
+    border-width: 1px;
+    border-radius: 10px;
+}
+.market-img img{
+    border-radius: 10px;
+    width: 100%; /* Mengatur lebar gambar menjadi 100% dari lebar container (market-img) */
+    height: 235px; 
 }

@@ -13,7 +13,7 @@
     <div class="hero">
         <?php include('view/layouts/navbar.php'); ?>
     </div>
-    <div class="container">
+    <div class="container-menu">
         <h2><strong>Collecting Art by using</strong><br> 
          Digital Cryptocurrency</h2>
          <div class="artwork-container">
