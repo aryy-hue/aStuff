@@ -52,6 +52,12 @@ span {
     margin-left: 20px;
     margin-top: 5px;
 }
+.bawah{
+    width: 100%;
+    /* min-height: 100vh; */
+    background-color: #eceaff;
+    color: #000000; /* Ubah nilai warna teks menjadi hitam (#000000) */
+}
 .footer {
     left: 0;
     bottom: 0;
@@ -59,13 +65,11 @@ span {
     padding: 40px 10%;
     background-color: #000000;
     color: white;
-    display: flex;
+    display:flex;
     justify-content: space-between;
+    
 }
 
-.footer .info-main {
-    /* Gaya CSS untuk .info-main */
-}
 
 .footer .info-work {
     /* Gaya CSS untuk .info-work */
@@ -107,7 +111,6 @@ span {
 .artwork-container:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan saat mengarahkan kursor mouse */
 }
-
 .artwork-image {
     width: 300px;
     height: 300px;
@@ -131,12 +134,27 @@ span {
 }
 
 
-/* MARKET */
-.container-market {
+/* MARKET */.container {
     display: flex;
     flex-wrap: wrap;
-    margin: 0px 50px; /* Jarak luar container */
-    align-items: center;
+    justify-content: space-around;
+}
+
+.container-market {
+    width: 23%; /* Lebar setiap item */
+    margin: 10px; /* Jarak antara item */
+}
+
+.marketplace {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.market-img img {
+    width: 100%; /* Gambar mengisi lebar container */
+    height: auto; /* Menjaga proporsi gambar */
+    border-radius: 20px;
 }
 
 .market-info {
@@ -145,29 +163,71 @@ span {
     align-items: center;
 }
 
-.market-info .price {
-    padding-top: 0px;
-    padding-left:200px;
-    padding-right:5px;
-    margin-left: auto; /* Memindahkan elemen .release ke kanan */
+.price {
+    margin-left: auto;
     text-align: right;
-}
-.price{
     color: green;
 }
-.marketplace{
-    padding: 10px 10px;
-    font-size:medium;
-    text-align: left;
-    margin:10px 0px;
-    margin-left: 10px;
-    border-style: solid;
-    border-color: #C4C4C4;
-    border-width: 1px;
-    border-radius: 10px;
+/* ADD ARTS */
+.card{
+    width:400px;
+    background-color:#fff;
+    border:none;
+    border-radius: 12px
 }
-.market-img img{
-    border-radius: 10px;
-    width: 100%; /* Mengatur lebar gambar menjadi 100% dari lebar container (market-img) */
-    height: 235px; 
+
+.form-control{
+    margin-top: 10px;
+    height: 48px;
+    width: 100%;
+    border: 2px solid #eee;
+    border-radius: 10px
+}
+.form-control:focus{
+    box-shadow: none;
+    border: 2px solid #039BE5
+}
+.form-file{
+    cursor: pointer;
+    margin-top: 10px;
+    height: 48px;
+    width: 100%;
+    border: 2px solid #eee;
+    border-radius: 10px
+}
+.form-file[type="file"] {
+    height: 48px;
+    width: 100%;
+    border: 2px solid #eee;
+    border-radius: 10px; /* Sudut yang melengkung */
+    padding-right: 220px;
+    box-sizing: border-box;
+}
+
+.form-file[type="file"]::-webkit-file-upload-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: rgb(23, 23, 23);
+    color: #fff;
+    border-radius: 10px; /* Sudut yang melengkung pada tombol "Choose File" */
+    cursor: pointer;
+}
+
+.form-file[type="file"]::-webkit-file-upload-button:hover {
+    background-color: rgb(37, 37, 37);
+    color: #fff;
+}
+.agree-text{
+    font-size: 12px
+}
+.terms{
+    font-size: 12px;
+    text-decoration: none;
+    color: #039BE5;
+}
+.confirm-button{
+    height: 50px;
+
+    border-radius: 10px
 }
