@@ -19,7 +19,7 @@
         <?php include('../layouts/navbar.php'); ?>
     </div>
 	<div class="container">
-		<form method="post" action="/aStuff/controllers/artsController.php" enctype="multipart/form-data">
+		<form method="post" action="/aStuff/controllers/artsAddController.php" enctype="multipart/form-data">
 			<div class="container mt-5 mb-5 d-flex justify-content-center">
 				<div class="card px-1 py-4">
 					<div class="card-body">
