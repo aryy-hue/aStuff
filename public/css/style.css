@@ -51,7 +51,6 @@ nav ul li a:hover {
 span {
     color: #000000;
     text-decoration: none;
-    margin-left: 20px;
     margin-top: 5px;
 }
 .bawah{
@@ -90,14 +89,6 @@ span {
     margin:0px 200px;
 }
 
-/* .container-menu p{
-    margin: 20px 20px;
-    position: absolute;
-    justify-content: right;
-    left:970px;
-    top:200px;
-    font-weight: bolder;
-} */
 
 
 /* FEATURES */
@@ -137,7 +128,8 @@ span {
 }
 
 
-/* MARKET */.container {
+/* MARKET */
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -171,6 +163,7 @@ span {
     text-align: right;
     color: green;
 }
+
 /* ADD ARTS */
 .card{
     width:400px;
@@ -231,6 +224,42 @@ span {
 }
 .confirm-button{
     height: 50px;
-
     border-radius: 10px
+}
+
+/* DETAIL */
+.container-detail{
+    width: 100%;
+    display: flex;
+   
+    justify-content: left;
+}
+.container-detail{
+    padding:100px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin: 20px 20px;
+}
+.container-detail-sub{
+    padding:10px 20px;
+}
+
+.container-detail-sub{
+    margin: 10px 10px;
+}
+
+.container-detail-sub p img{
+    padding-left: 0px;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    padding:10px 0px;
+}
+
+.artist {
+    padding-left: 10px;
+    margin-right: 10px;
 }

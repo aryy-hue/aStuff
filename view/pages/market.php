@@ -19,19 +19,19 @@
             $no = 1;
             $data = mysqli_query($koneksi,"select * from arts");
             while($d = mysqli_fetch_array($data)){
-        ?>
-        <div class="container-market">
-            <div class="marketplace">
-                <div class="market-img">
-                    <img src="../../public/uploads/<?php echo $d['img'] ?>" alt="highlight">
-                </div>
-                <div class="market-info">
-                    <p>
-                        <img src="/aStuff/public/img/artist.jpg" alt="Artist" class="artist">@ <?php echo $d['name']; ?></p>
-                    <p class="price"><strong>Price</strong><br> + <?php echo $d['price']; ?></p>
+                ?>
+            <div class="container-market" >
+                <div class="marketplace">
+                    <div class="market-img">
+                        <a href="artDetail.php?id_art=<?php echo $d['id_art']; ?>"><img src="../../public/uploads/<?php echo $d['img'] ?>" alt="highlight"></a>
+                    </div>
+                    <div class="market-info">
+                        <p>
+                            <img src="/aStuff/public/img/artist.jpg" alt="Artist" class="artist">@ <?php echo $d['name']; ?></p>
+                        <p class="price"><strong>Price</strong><br>  <?php echo $d['price']; ?> Ξ</p>
+                    </div>
                 </div>
             </div>
-        </div>
         <?php }?>
     </div>
     <?php include('../layouts/footer.php'); ?>   

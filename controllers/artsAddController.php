@@ -6,6 +6,7 @@ include('../models/dataBaseConn.php');
 $art_name = $_POST['art_name'];
 $date_added = $_POST['date_added'];
 $name = $_POST['name'];
+$owner = $_POST['name'];
 $price = $_POST['price'];
 
 $rand = rand();
@@ -21,7 +22,7 @@ if(!in_array($ext,$ekstensi) ) {
 	if($ukuran < $maxFileSize){		
 		$img = $rand.'_'.$filename;
 		move_uploaded_file($_FILES['img']['tmp_name'], '../public/uploads/'.$rand.'_'.$filename);
-		mysqli_query($koneksi, "INSERT INTO arts VALUES(' ','$art_name', '$date_added',' ','$name', '$img' , '$price')");
+		mysqli_query($koneksi, "INSERT INTO arts VALUES(' ','$art_name', '$date_added','$name', '$img' , '$price' , '$owner')");
 		header("location:/aStuff/view/pages/market.php");
 	}else{
 		header("location:/aStuff/index.php?alert=gagal_ukuran");
