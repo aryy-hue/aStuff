@@ -25,7 +25,7 @@
                     <div class="row g-0">
                     <div class="col-lg-6">
                         <div class="p-1 ">
-                        <img src="/aStuff/public/img/background.gif" style="width:640px;height:940px; border-radius:10px;" alt="">
+                        <img src="/aStuff/public/img/giphy.gif" style="width:640px;height:940px; border-radius:10px;" alt="">
                         </div>
                     </div>
                     <div class="col-lg-6 bg-indigo text-white">
@@ -57,13 +57,13 @@
                         </div>
                         <div class="mb-4">
                             <div class="form-outline form-white">
-                            <input type="text" id="password" class="form-control form-control-lg" name="password" required/>
+                            <input type="password" id="password" class="form-control form-control-lg" name="password" required/>
                             <label class="form-label" for="password">Passwod</label>
                             </div>
                         </div>
                         <div class="mb-4">
                             <div class="form-outline form-white">
-                            <input type="text" id="confirm_password" class="form-control form-control-lg" name="confirm_password" required/>
+                            <input type="password" id="confirm_password" class="form-control form-control-lg" name="confirm_password" required/>
                             <label class="form-label" for="confirm_password">Confirm Passwod</label>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                         <div class="form-check d-flex justify-content-start mb-4 pb-3">
                             <input class="form-check-input me-3" type="checkbox" value="" id="form2Example3c" required/>
                             <label class="form-check-label text-black" for="form2Example3">
-                            I do accept the <a href="/aStuff/terms.php" class="text-white"><strong>Terms and Conditions</strong></a> of your
+                            I do accept the <a href="/aStuff/terms.php" class="text-white" target="_blank"><strong>Terms and Conditions</strong></a> of your
                             site.
                             </label>
                         </div>

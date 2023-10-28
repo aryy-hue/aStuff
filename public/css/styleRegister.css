@@ -8,8 +8,8 @@
      /* Menambahkan efek blur 5 piksel */
 }
 @keyframes moveBackground {
-    0% {r
-        background-position: 0% 50%;
+    0% {
+        background-position: 0% 1%;
         
     }
     100% {
@@ -20,7 +20,7 @@
 
 body {
     /* Latar belakang dengan gradient */
-    background: linear-gradient(to top left, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 73%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(22deg, rgba(251,0,95,1) 0%, rgba(57,33,94,1) 47%, rgba(37,80,130,1) 100%);
     
     /* Properti animasi */
     animation: moveBackground 5s linear infinite; /* Mengubah durasi menjadi 5 detik */

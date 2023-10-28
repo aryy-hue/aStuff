@@ -9,6 +9,7 @@
 </head>
 <body>
 	<?php
+	session_start();
 	// Check if the 'alert' parameter exists in the URL
 	if (isset($_GET['alert']) && $_GET['alert'] == 'gagal_ukuran') {
 		// Display JavaScript alert if the 'alert' parameter is present
