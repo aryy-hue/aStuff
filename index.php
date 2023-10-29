@@ -10,6 +10,12 @@
 </head>
 <body>
 <!doctype html>
+    <?php 
+    session_start();
+    if($_SESSION['status'] !="login"){
+      header("location:view/auth/login.php");
+    }
+    ?>
     <div class="hero">
         <?php include('view/layouts/navbar.php'); ?>
     </div>

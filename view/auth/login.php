@@ -25,12 +25,12 @@
                     <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Let's Continue Our Journey!</h3>
 
                     <div class="form-outline mb-4">
-                    <input type="text" id="nickname" class="form-control form-control-lg" name="nickname"/>
+                    <input type="text" id="nickname" class="form-control form-control-lg" name="nickname" required/>
                     <label class="form-label" for="nickname">Nickname</label>
                     </div>
 
                     <div class="form-outline mb-4">
-                    <input type="password" id="password" class="form-control form-control-lg" name="password"/>
+                    <input type="password" id="password" class="form-control form-control-lg" name="password" required/>
                     <label class="form-label" for="password">Password</label>
                     </div>
 

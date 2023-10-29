@@ -11,8 +11,13 @@
 	 <div class="hero">
         <?php include('../layouts/navbar.php'); ?>
     </div>
-	<div class="container">
-        
+	<div class="container">   
+        <?php 
+        session_start();
+        if($_SESSION['status'] !="login"){
+        header("location:../auth/login.php");
+        }
+        ?>
         <?php
         include('../../models/dataBaseConn.php');
            // Periksa apakah parameter id_art ada di URL
@@ -34,14 +39,14 @@
                                     <img src="/aStuff/public/img/artist.jpg" alt="Artist" class="artist">Artist : <br>
                                     <strong>@<?php echo $d['name']; ?></strong>
                                     <img style="margin-left:100px ;float:right;"src="/aStuff/public/img/artist.jpg" alt="Artist" class="artist">Owner : <br>
-                                    <strong>@<?php echo $d['owner']; ?></strong>
+                                    <strong>@<?php echo $d['nickname']; ?></strong>
                     </p>
                     <h3>Description</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam harum tenetur provident eveniet aspernatur nihil placeat nulla? Similique ea debitis delectus laudantium ex. Voluptatem itaque in facere optio, voluptatum modi magni error assumenda consequuntur sapiente similique, exercitationem quas voluptate cumque aperiam, molestiae animi eius? Error magnam similique reiciendis facilis beatae.</p>
+                    <p><?php echo $d['dsc']; ?></p>
                     <p style="color: #C4C4C4;">Reserve Price <br>
                         <strong><?php echo $d['price']; ?> Ξ</strong>
                     </p>
-                    <button type="button" class="btn btn-dark">Place Bid</button>
+                    <button type="button" class="btn btn-dark" id="placeBidButton">Place Bid</button>
                 </div>
             </div>
         <?php }
@@ -70,6 +75,28 @@
         const currentValue = Number(inputField.value) || 0;
         inputField.value = currentValue + 1;
         });
+    </script>
+    <script>
+    document.getElementById('placeBidButton').addEventListener('click', function() {
+        // Simulasi proses pembelian atau penawaran
+        // Di sini Anda dapat menambahkan logika pembelian atau penawaran yang sesuai dengan kebutuhan aplikasi Anda
+
+        // Setelah pembelian atau penawaran berhasil, Anda dapat memperbarui tampilan atau melakukan tindakan lainnya
+        const reservePrice = <?php echo $d['price']; ?>; // Harga reserve dari data PHP
+        const bidAmount = parseFloat(prompt('Masukkan jumlah penawaran Anda:'));
+
+        // Memeriksa apakah jumlah penawaran valid dan memenuhi harga reserve
+        if (!isNaN(bidAmount) && bidAmount >= reservePrice) {
+            alert('Penawaran Anda berhasil diterima!');
+            // Di sini Anda dapat memperbarui tampilan dengan informasi baru, contohnya:
+            // Update teks tombol dengan status pembelian
+            document.getElementById('placeBidButton').textContent = 'Bid Placed';
+            // Memperbarui teks harga dengan harga penawaran terbaru
+            document.querySelector('.image-container').innerHTML += `<br>Your Bid: <strong>${bidAmount} Ξ</strong>`;
+        } else {
+            alert('Penawaran tidak valid atau kurang dari harga reserve.');
+        }
+    });
     </script>
 </body>
 </html>

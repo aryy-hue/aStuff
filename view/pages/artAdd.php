@@ -11,11 +11,15 @@
 	<?php
 	session_start();
 	// Check if the 'alert' parameter exists in the URL
+	if($_SESSION['status'] !="login"){
+		header("location:../auth/login.php");
+	}
 	if (isset($_GET['alert']) && $_GET['alert'] == 'gagal_ukuran') {
 		// Display JavaScript alert if the 'alert' parameter is present
-		echo '<script>alert("Ukuran file melebihi batas maksimal (20 MB).");</script>';
+		echo '<script>alert("Ukuran file melebihi batas maksimal (10 MB).");</script>';
 	}
 	?>
+
 	 <div class="hero">
         <?php include('../layouts/navbar.php'); ?>
     </div>
@@ -57,6 +61,13 @@
 							<div class="col-sm-12">
 								<div class="form-group">
 									<div class="input-group"> <input class="form-control" type="number" step="0.0001" inputmode="decimal" placeholder="How much does it cost ? " name="price"> </div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<div class="input-group"> <input class="form-control" type="text" step="0.0001" placeholder="Describe your art " name="dsc"> </div>
 								</div>
 							</div>
 						</div>

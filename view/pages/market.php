@@ -9,6 +9,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
+    <?php 
+    session_start();
+    if($_SESSION['status'] !="login"){
+      header("location:../auth/login.php");
+    }
+    ?>
     <div class="hero">
         <?php include('../layouts/navbar.php'); ?>
     </div>
@@ -16,10 +22,9 @@
     <div class="container">
         <?php include('../../models/dataBaseConn.php');?>
         <?php
-            $no = 1;
             $data = mysqli_query($koneksi,"select * from arts");
             while($d = mysqli_fetch_array($data)){
-                ?>
+        ?>
             <div class="container-market" >
                 <div class="marketplace">
                     <div class="market-img">

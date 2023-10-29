@@ -4,7 +4,7 @@ include('../models/dataBaseConn.php');
 session_start();
 
 $nickname = $_POST['nickname'];
-$password = $_POST['password']; // Menggunakan MD5 untuk keamanan sederhana
+$password = hash('sha256',$_POST['password']); // Menggunakan MD5 untuk keamanan sederhana
 
 $login = mysqli_query($koneksi, "SELECT * FROM user WHERE nickname='$nickname' AND password='$password'");
 $cek = mysqli_num_rows($login);

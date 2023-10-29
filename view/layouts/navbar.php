@@ -5,7 +5,7 @@
         
         <li><a href="/aStuff/view/pages/market.php">Market</a></li>
         <li><a href="#">Community</a></li>
-            <div class="dropdown">
+        <div class="dropdown">
             <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <span class="material-symbols-outlined" >
                     person
