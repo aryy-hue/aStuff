@@ -12,5 +12,5 @@
             You can press learn more if you want more information about this site
             </p>
         </div>
-        <a href="/aStuff/terms.php" style="text-decoration: none;color:white;text-align: center;padding:50px 20px;" class="btn btn-outline-light btn-sm">Learn More</a>
+        <a href="/aStuff/terms.php" style="text-decoration: none;color:white;text-align: center;padding:50px 20px;" class="btn btn-outline-light btn-sm" target="_blank">Learn More</a>
     </div>

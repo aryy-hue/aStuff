@@ -23,7 +23,6 @@
 </head>
 <body>
     <div class="container" style="color:red; ">
-        <a href="/aStuff/view/auth/register.php" class="back" style="color: black;"><strong>Go back </strong></a>
         <h1>Terms and Conditions for Astuff NFT Marketplace</h1>
         <p><strong>Last Updated: October 28, 2023</strong></p>
 
