@@ -51,8 +51,9 @@
                         </div>
                         <div class="mb-4">
                             <div class="form-outline form-white">
-                            <input type="text" id="phone_number" class="form-control form-control-lg" name="phone_number" required/>
-                            <label class="form-label" for="phone_number">Phone Number</label>
+                            <input type="tel" id="phone_number" class="form-control form-control-lg" name="phone_number" placeholder="(+62)" required/>
+                            
+                            <label class="form-label" for="phone_number">Phone Number <br><br></label>
                             </div>
                         </div>
                         <div class="mb-4">

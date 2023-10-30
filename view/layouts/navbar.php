@@ -1,5 +1,5 @@
 <nav>
-
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
     <img src="/aStuff/public/img/aStuff.png" alt="kopi" class="logo">
     <ul>
         <li><a href="/aStuff/index.php">Features</a></li>

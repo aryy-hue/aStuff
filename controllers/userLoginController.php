@@ -20,7 +20,7 @@ if ($cek > 0) {
         $_SESSION['nickname'] = $nickname;
         $_SESSION['id_user'] = $id_user;
         $_SESSION['status'] = "login";
-        header("location: /aStuff/view/pages/market.php"); // Redirect ke halaman admin setelah login berhasil
+        header("location: /aStuff/view/admin/index.php"); // Redirect ke halaman admin setelah login berhasil
     } else {
         $_SESSION['nickname'] = $nickname;
         $_SESSION['status'] = "login";
